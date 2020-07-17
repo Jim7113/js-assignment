@@ -16,8 +16,9 @@ function feetToMile(feet) {
 //woodCalculator
 
 function woodCalculator(chair, table, bed) {
-    if ((chair >= 0) && (chair >= 0) && (bed >= 0)) {
-        return chair * 1 + table * 3 + bed * 5;
+    if ((chair >= 0) && (table >= 0) && (bed >= 0)) {
+        var woodsNeeded = chair * 1 + table * 3 + bed * 5;
+        return woodsNeeded;
     } else {
         return "Number of furnitures can not be negative.";
     }
